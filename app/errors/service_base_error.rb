@@ -1,0 +1,2 @@
+class ServiceBaseError < ApplicationBaseError
+end
