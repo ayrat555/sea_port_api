@@ -3,7 +3,7 @@ class Cargo < ActiveRecord::Base
   has_many :opening_locations, as: :portable
 
   def matches_capacity?(capacity)
-    volume - volume * configus.volume_inaccuracy <= capacity
+    volume - inaccuracy <= capacity
   end
 
 
